@@ -2,13 +2,22 @@
   "name": "ziwei-study-lab",
   "private": true,
   "version": "1.0.0",
+  "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChenneyZhuang/ziwei-study-lab.git"
+  },
+  "homepage": "https://github.com/ChenneyZhuang/ziwei-study-lab#readme",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
     "test": "node --import tsx tests/core.test.ts && node --import tsx tests/ui.test.tsx",
     "test:upstream": "node --import tsx tests/regression/clock-adjust.test.ts && node --import tsx tests/regression/dst-cn.test.ts && node --import tsx tests/regression/hongluan-tianxi.test.ts && node --import tsx tests/regression/natal-dual-sihua-same-palace.test.ts && node --import tsx tests/regression/solar-date-exists.test.ts && node --import tsx tests/regression/sizhu-lichun-boundary.test.ts && node --import tsx tests/regression/pan-integrity.test.ts",
-    "audit": "node --import tsx tests/audit/natal-vs-iztro.ts && node --import tsx tests/audit/flow-vs-iztro.ts && node --import tsx tests/audit/reading-consistency.ts && node --import tsx tests/audit/edge-cases.ts"
+    "audit": "node --import tsx tests/audit/natal-vs-iztro.ts && node --import tsx tests/audit/flow-vs-iztro.ts && node --import tsx tests/audit/reading-consistency.ts && node --import tsx tests/audit/edge-cases.ts",
+    "check": "npm run typecheck && npm test && npm run test:upstream && npm run audit && npm run build"
   },
   "dependencies": {
     "iztro": "2.5.8",

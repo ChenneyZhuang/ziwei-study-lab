@@ -1,4 +1,3 @@
-import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import assert from 'node:assert/strict';
 import App, { ChartPage } from '../src/App';

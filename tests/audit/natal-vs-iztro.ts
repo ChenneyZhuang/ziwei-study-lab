@@ -7,7 +7,6 @@ const br = (s: string) => BR.indexOf(s.slice(-1));
 
 let total = 0;
 const diff = { ming: 0, shen: 0, ju: 0, palaceName: 0, major: 0, sihua: 0 };
-const samples: string[] = [];
 const detail: Record<string, string[]> = { ming: [], shen: [], ju: [], palaceName: [], major: [], sihua: [] };
 
 const dates: string[] = [];

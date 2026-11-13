@@ -25,7 +25,7 @@ import {
 } from './core';
 import { PROVINCES } from './vendor/ziwei/cities';
 import { STEMS } from './vendor/ziwei/constants';
-import type { Palace, SiHua, Star } from './vendor/ziwei/types';
+import type { SiHua, Star } from './vendor/ziwei/types';
 
 const WORLD_CITIES = [
   { name: '悉尼', longitude: '151.21', offset: '10' },

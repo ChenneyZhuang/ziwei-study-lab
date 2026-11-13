@@ -1,6 +1,6 @@
 import { astro } from 'iztro';
 import assert from 'node:assert/strict';
-import { DEFAULT_FORM, makeChart, calendarOverlay, smallLimitContext, flowContext } from '../../src/core';
+import { DEFAULT_FORM, makeChart, calendarOverlay, flowContext } from '../../src/core';
 import { SI_HUA_TABLE } from '../../src/vendor/ziwei/constants';
 
 const BR = '子丑寅卯辰巳午未申酉戌亥';

@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Keep bundled classical study corpora & lockfile from skewing GitHub language statistics
+public/data/*.json linguist-vendored
+package-lock.json linguist-generated
