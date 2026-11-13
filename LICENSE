@@ -1,0 +1,35 @@
+MIT License
+
+Copyright (c) 2026 紫微研究 (upstream core engine: Renhuai123/ziwei-doushu)
+Copyright (c) 2026 ChenneyZhuang (UI redesign, plain-language reading engine & relationship analysis)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+### Third-Party Data & Corpus Licensing Notice
+
+This MIT License applies to the source code of this repository. Bundled textual
+data corpora remain subject to their respective upstream licenses:
+
+1. `public/data/tianji.json` is licensed under CC BY-NC-SA 4.0 (Non-Commercial
+   ShareAlike) and is restricted to non-commercial personal study and research;
+   see `public/data/TIANJI-LICENSE.md` and `NOTICE.md`.
+2. `public/data/quanshu-wikisource.json` consists of structured public-domain
+   excerpts compiled from Chinese Wikisource; see `NOTICE.md`.

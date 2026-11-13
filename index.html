@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      (function () {
+        try {
+          var s = localStorage.getItem('color-scheme');
+          if (s === 'light' || s === 'dark') {
+            var m = document.querySelector('meta[name="color-scheme"]');
+            if (m) m.content = s;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f1e8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#090d16" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="在命盘、古籍和不同排盘口径之间，建立自己的紫微研究空间。" />
+    <title>紫微研习室 · 一张命盘，一场探索</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

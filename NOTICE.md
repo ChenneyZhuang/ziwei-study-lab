@@ -1,0 +1,9 @@
+# Attribution and License Notice
+
+This open-source educational workspace includes adapted calculation logic and rule modules from [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) (synced with upstream `main`, including `patterns-dinggui/fu/pin/za`, `shier-shen`, `famous`, `heming-knowledge`, and `algorithm`/`school-config` validation updates; original snapshot `495b79ecb3524b20b2edc026067d7d0b0f407319`).
+
+- **Engine & Source Code**: Provided under the MIT License; see [LICENSE](LICENSE) and [UPSTREAM-LICENSE](UPSTREAM-LICENSE). In `patterns.ts` and `famous.ts`, Next.js `server-only` imports were removed so pure rules and reference samples run locally in the browser.
+- **Calendar & Ephemeris Dependencies**: Uses [`iztro`](https://github.com/SylarLong/iztro) (MIT) and [`lunar-javascript`](https://github.com/6tail/lunar-javascript) (MIT).
+- **《天纪》 Quotation Corpus (`public/data/tianji.json`)**: Attributed to the upstream repository and original copyright holders, supplied strictly under **CC BY-NC-SA 4.0** for **non-commercial study and research only**; see [public/data/TIANJI-LICENSE.md](public/data/TIANJI-LICENSE.md). Rights in the quotations belong to their respective owners.
+- **《紫微斗数全书》 Excerpts (`public/data/quanshu-wikisource.json`)**: Simplified-Chinese excerpts collected from Chinese Wikisource (`https://zh.wikisource.org/zh-hans/紫微斗數全書/全覽`) on 2026-11-01. The classical work is in the public domain; Wikisource formatting and community edits remain subject to Wikisource terms and link back to their original section anchors.
+- **Optional External v4.0 Dataset**: Not bundled in this repository. If a user loads a local `.jsonl` file inside the Research page, credit: 紫微斗数开源解读数据集 v4.0, Author: 王多鱼AI ([Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)), provided under CC BY 4.0 (excluding third-party quoted texts; see upstream `DATASET-LICENSE`).

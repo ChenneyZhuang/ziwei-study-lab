@@ -1,0 +1,28 @@
+{
+  "name": "ziwei-study-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --import tsx tests/core.test.ts && node --import tsx tests/ui.test.tsx",
+    "test:upstream": "node --import tsx tests/regression/clock-adjust.test.ts && node --import tsx tests/regression/dst-cn.test.ts && node --import tsx tests/regression/hongluan-tianxi.test.ts && node --import tsx tests/regression/natal-dual-sihua-same-palace.test.ts && node --import tsx tests/regression/solar-date-exists.test.ts && node --import tsx tests/regression/sizhu-lichun-boundary.test.ts && node --import tsx tests/regression/pan-integrity.test.ts",
+    "audit": "node --import tsx tests/audit/natal-vs-iztro.ts && node --import tsx tests/audit/flow-vs-iztro.ts && node --import tsx tests/audit/reading-consistency.ts && node --import tsx tests/audit/edge-cases.ts"
+  },
+  "dependencies": {
+    "iztro": "2.5.8",
+    "lucide-react": "^0.468.0",
+    "lunar-javascript": "1.7.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
